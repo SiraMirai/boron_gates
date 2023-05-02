@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+
+<add sel="//cue[@name='Boron_Gates_Open_HereticsEnd']/actions">
+	<find_sector macro="macro.Cluster_48_Sector001_macro" space="player.galaxy" required="true" name="$GetsuFuneSector" />
+		
+		<!-- Ocean of Fantasy <-> Getsu Fune -->
+		<find_gate name="$OceanOfFantasyGates" multiple="true" space="$OceanOfFantasySector" active="false" />
+		<do_for_each name="$g" in="$OceanOfFantasyGates">
+		<do_if value=" ($g.exit.exists) and ($g.exit.sector == $GetsuFuneSector)">
+		<set_value name="$GetsuFune_OceanOfFantasyGate" exact="$g.exit" />
+		<set_value name="$OceanOfFantasy_GetsuFuneGate" exact="$g" />
+		</do_if>
+		</do_for_each>
+		<remove_value name="$OceanOfFantasyGates" />
+
+	<set_object_active object="$OceanOfFantasy_GetsuFuneGate" />
+</add>
+<add sel="//cue[@name='Boron_Gates_Open_KingdomEnd']/actions">
+	<find_sector macro="macro.Cluster_424_Sector001_macro" space="player.galaxy" extension="'ego_dlc_split'" required="true" name="$XenonSector" />
+	<find_sector macro="macro.Cluster_08_Sector001_macro" space="player.galaxy" required="true" name="$SilentWitness" />
+		
+		<!-- Watchful Gaze <-> Emperor's Pride -->
+		<find_gate name="$WatchfulGazeGates" multiple="true" space="$WatchfulGazeSector" active="false" />
+		<do_for_each name="$g" in="$WatchfulGazeGates">
+		<do_if value=" ($g.exit.exists) and ($g.exit.sector == $XenonSector)">
+		<set_value name="$EmperorsPride_WatchfulGazeGate" exact="$g.exit" />
+		<set_value name="$WatchfulGaze_EmperorsPrideGate" exact="$g" />
+		</do_if>
+		</do_for_each>
+		<remove_value name="$WatchfulGazeGates" />
+		
+		<!-- Atreus' Clouds <-> Silent Witness -->
+		<find_gate name="$AtreusCloudGates" multiple="true" space="$AtreusCloudSector" active="false" />
+		<do_for_each name="$g" in="$AtreusCloudGates">
+		<do_if value=" ($g.exit.exists) and ($g.exit.sector == $SilentWitness)">
+		<set_value name="$SilentWitness_AtreusCloudGate" exact="$g.exit" />
+		<set_value name="$AtreusCloud_SilentWitnessGate" exact="$g" />
+		</do_if>
+		</do_for_each>
+		<remove_value name="$AtreusCloudGates" />
+
+	<set_object_active object="$WatchfulGaze_EmperorsPrideGate" />
+	<set_object_active object="$AtreusCloud_SilentWitnessGate" />
+</add>
+
+</diff>

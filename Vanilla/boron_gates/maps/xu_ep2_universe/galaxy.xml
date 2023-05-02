@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<diff>
+
+<!--Ocean of Fantasy - Getsu Fune-->
+  <add sel="/macros/macro[@name='XU_EP2_universe_macro']/connections">
+    <connection name="ClusterGate48To604" ref="destination" path="../Cluster_48_connection/Cluster_48_Sector001_connection/zone_bg_Cluster_48_Sector001_connection/connection_ClusterGate48To604">
+      <macro connection="destination" path="../../../../../Cluster_604_connection/Cluster_604_Sector001_connection/zone_bg_Cluster_604_Sector001_connection/connection_ClusterGate604To48"/>
+    </connection>
+  </add>
+<!--Watchful Gaze - Emperors Pride-->
+  <add sel="/macros/macro[@name='XU_EP2_universe_macro']/connections">
+    <connection name="ClusterGate424To601" ref="destination" path="../Cluster_424_connection/Cluster_424_Sector001_connection/zone_bg_Cluster_424_Sector001_connection/connection_ClusterGate424To601">
+      <macro connection="destination" path="../../../../../Cluster_601_connection/Cluster_601_Sector001_connection/zone_bg_Cluster_601_Sector001_connection/connection_ClusterGate601To424"/>
+    </connection>
+  </add>
+<!--Atreus Clouds - Silent Witness-->
+  <add sel="/macros/macro[@name='XU_EP2_universe_macro']/connections">
+    <connection name="ClusterGate08To608" ref="destination" path="../Cluster_08_connection/Cluster_08_Sector001_connection/zone_bg_Cluster_08_Sector001_connection/connection_ClusterGate08To608">
+      <macro connection="destination" path="../../../../../Cluster_608_connection/Cluster_608_Sector001_connection/zone_bg_Cluster_608_Sector001_connection/connection_ClusterGate608To08"/>
+    </connection>
+  </add>
+</diff>
