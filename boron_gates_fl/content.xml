@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content id="ws_2972965271" name="Boron Connections - Farnham's Legend" description="Adds several gates to give the Boron more presence." author="Sira" version="100" date="2023-05-07" save="0" sync="false" lastupdate="1683496991">
+  <dependency id="ego_dlc_split" optional="false" name="Split Vendetta"/>
+  <dependency id="ego_dlc_boron" optional="false" name="Kingdom End"/>
+  <dependency id="ws_2929776994" optional="false" name="Sector Farnham's Legend"/>
+  <text language="7" name="Boron Connections - Farnham's Legend" description="Adds several gates to give the Boron more presence." author="Sira"/>
+  <text language="33" name="Boron Connections - Farnham's Legend" description="Adds several gates to give the Boron more presence." author="Sira"/>
+  <text language="34" name="Boron Connections - Farnham's Legend" description="Adds several gates to give the Boron more presence." author="Sira"/>
+  <text language="39" name="Boron Connections - Farnham's Legend" description="Adds several gates to give the Boron more presence." author="Sira"/>
+  <text language="44" name="Boron Connections - Farnham's Legend" description="Adds several gates to give the Boron more presence." author="Sira"/>
+  <text language="49" name="Boron Connections - Farnham's Legend" description="Adds several gates to give the Boron more presence." author="Sira"/>
+  <text language="55" name="Boron Connections - Farnham's Legend" description="Adds several gates to give the Boron more presence." author="Sira"/>
+  <text language="81" name="Boron Connections - Farnham's Legend" description="Adds several gates to give the Boron more presence." author="Sira"/>
+  <text language="82" name="Boron Connections - Farnham's Legend" description="Adds several gates to give the Boron more presence." author="Sira"/>
+  <text language="86" name="Boron Connections - Farnham's Legend" description="Adds several gates to give the Boron more presence." author="Sira"/>
+  <text language="88" name="Boron Connections - Farnham's Legend" description="Adds several gates to give the Boron more presence." author="Sira"/>
+</content>
